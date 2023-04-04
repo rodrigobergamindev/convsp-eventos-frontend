@@ -14,7 +14,7 @@ export default function MercadoPagoPagamento() {
 
     
     <Script src="https://sdk.mercadopago.com/js/v2" onLoad={() => {
-    const mp = new MercadoPago('TEST-3134980c-c60d-47b3-85b5-f98ea5182a5b');
+    const mp = new MercadoPago('TEST-848bd8c1-5036-42a8-9318-b5371b5d539f');
 
     const bricksBuilder = mp.bricks();
 
@@ -27,10 +27,9 @@ export default function MercadoPagoPagamento() {
         },
         locale: 'pt',
         customization : {
-          maxInstallments: 7,
           paymentMethods: {
               creditCard: 'all',
-              bankTransfer: ['pix']
+              bankTransfer: ['pix'],
           },
           visual: {
             style: {
